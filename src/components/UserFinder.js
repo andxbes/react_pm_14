@@ -9,7 +9,7 @@ class UserFinder extends Component {
     constructor() {
         super();
         this.state = {
-            filteredUsers: this.context.users,
+            filteredUsers: [],
             searchTerm: ''
         };
     }
