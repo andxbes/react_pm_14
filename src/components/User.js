@@ -7,6 +7,10 @@ class User extends Component {
     console.info('user constructor');
   }
 
+  componentWillUnmount() {
+    console.info('User will unmount', this.props.name);
+  }
+
   render() {
     return <li className={classes.user}>{this.props.name}</li>;
   }
